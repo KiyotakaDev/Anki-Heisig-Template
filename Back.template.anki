@@ -1,0 +1,24 @@
+<!-- Back side -->
+<div class="background">
+  <div class="wrapper">
+
+    <!-- Upper section -->
+    <div class="kanji-section">
+      <span class="number">Strokes: {{Strokes}}</span>
+      <div class="kanji-container">
+        <p class="meaning">{{Meaning}}</p>
+        <span>{{StrokeOrder}}</span>
+      </div>
+    </div>
+
+    <!-- Lower section -->
+    <div class="info-section">
+      <div class="info-wrapper">
+        <div class="info">
+          <p>{{AsComponent}}</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>

@@ -1,0 +1,170 @@
+/* Variables */
+:root {
+  --black-50: #e3b5b5;
+  --black-100: #dcacba;
+  --black-200: #d28eae;
+  --black-300: #c261a1;
+  --black-400: #9d3f8d;
+  --black-500: #6f2f6f;
+  --black-600: #4b1e52;
+  --black-700: #2d1537;
+  --black-800: #1a0f24;
+  --black-900: #110b18;
+  --black-950: #040308;
+  
+  --aqua-50: #ebfffd;
+  --aqua-100: #c2fffc;
+  --aqua-200: #80fffb;
+  --aqua-300: #38fff8;
+  --aqua-400: #00ffee;
+  --aqua-500: #00e0d5;
+  --aqua-600: #00b8b1;
+  --aqua-700: #008f8c;
+  --aqua-800: #007070;
+  --aqua-900: #045d5d;
+  --aqua-950: #003538;
+}
+/* font-family: "UD Digi Kyokasho NK-B"; */
+
+/* CSS Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "UD Digi Kyokasho NK-B", "Consolas";
+  scroll-behavior: smooth;
+}
+
+/* General styling */
+.background {
+  --s: 300px; /* control the size */
+  --c1: var(--black-700);
+  --c2: var(--black-950);
+
+  --_g: 
+     var(--c1) 0%  5% ,var(--c2) 6%  15%,var(--c1) 16% 25%,var(--c2) 26% 35%,var(--c1) 36% 45%,
+     var(--c2) 46% 55%,var(--c1) 56% 65%,var(--c2) 66% 75%,var(--c1) 76% 85%,var(--c2) 86% 95%,
+     #0000 96%;
+  background:
+    radial-gradient(50% 50% at 100% 0,var(--_g)),
+    radial-gradient(50% 50% at 0 100%,var(--_g)),
+    radial-gradient(50% 50%,var(--_g)),
+    radial-gradient(50% 50%,var(--_g)) calc(var(--s)/2) calc(var(--s)/2)
+    var(--c2);
+  background-size: var(--s) var(--s);
+
+  height: auto;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  margin: 4rem 0;
+  height: 53rem;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* General upper section */
+.kanji-section {
+  flex: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--black-600);
+  border-radius: 3rem 3rem 0 0;
+  position: relative;
+}
+.kanji-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 0;
+}
+
+/* Front side specific upper */
+.number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 2rem;
+  font-size: 3rem;
+}
+.kanji {
+  font-size: 8rem;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+.kanji a {
+  text-decoration: none;
+  color: #fff;
+}
+.kanji:hover {
+  transform: scale(1.2);
+}
+.kanji:active {
+  transform: scale(0.5);
+}
+#radical a {
+  font-size: 2.5rem;
+  color: #fff;
+  transition: color 0.5s ease;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+    color: var(--aqua-200);
+  }
+  50% {
+    opacity: 0.4;
+    color: var(--black-300);
+  }
+}
+#radical div {
+  font-size: 2.5rem;
+}
+
+/* Lower section */
+.info-section {
+  flex: 1.2;
+  background-color: #fff;
+  color: var(--black-600);
+  border-radius: 0 0 3rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info-wrapper {
+  padding: 1rem;
+  height: 30rem;
+  width: 94%;
+  overflow-y: auto;
+}
+.info {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  gap: 1.3rem;
+  margin: 2rem;
+  font-size: 4rem;
+}
+/* Front side specific lower */
+#story a {
+  transition: color 0.4s ease;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Back side specific upper */
+.meaning {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 2rem;
+  font-size: 3rem;
+}

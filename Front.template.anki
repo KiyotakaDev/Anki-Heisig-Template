@@ -1,0 +1,29 @@
+<!-- Front side -->
+<div class="background">
+  <div class="wrapper">
+
+    <!-- Upper section -->
+    <div class="kanji-section">
+      <span class="number">Kanji #{{Kanji_id}}</span>
+      <div class="kanji-container">
+        <p class="kanji">
+          <a href="https://jisho.org/search/{{Kanji}}%23kanji">
+            {{Kanji}}
+          </a>
+        </p>
+        <span id="radical">{{hint:Radical}}</span>
+      </div>
+    </div>
+
+    <!-- Lower section -->
+    <div class="info-section">
+      <div class="info-wrapper">
+        <div class="info">
+          <p id="story">{{hint:Story}}</p>
+          <p>{{furigana:Reading}}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
