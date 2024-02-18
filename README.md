@@ -6,7 +6,7 @@
 > If you want to edit or do something similar, I recommend installing the VSCode [Anki Editor](https://marketplace.visualstudio.com/items?itemName=pedro-bronsveld.anki-editor) extension and [Anki Connect](https://ankiweb.net/shared/info/2055492159) Add-on to make it work.
 
 > [!NOTE]
-> This template also works with [Japanese Support](https://ankiweb.net/shared/info/3918629684) Add-on.
+> You can also use this template to learn other languages, in which case you will have to modify the fields.
 
 ## Front side:
 
