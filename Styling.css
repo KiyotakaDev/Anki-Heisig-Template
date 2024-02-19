@@ -11,6 +11,8 @@
   --black-800: #1a0f24;
   --black-900: #110b18;
   --black-950: #040308;
+
+  --custom-white: rgba(255, 255, 255, 1);
   
   --aqua-50: #ebfffd;
   --aqua-100: #c2fffc;
@@ -61,7 +63,7 @@
 }
 .wrapper {
   margin: 4rem 0;
-  height: 53rem;
+  height: 84vh;
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -98,10 +100,11 @@
   font-size: 8rem;
   transition: transform 0.4s ease;
   cursor: pointer;
+  color: var(--custom-white);
 }
 .kanji a {
   text-decoration: none;
-  color: #fff;
+  color: var(--custom-white);
 }
 .kanji:hover {
   transform: scale(1.2);
@@ -111,9 +114,10 @@
 }
 #radical a {
   font-size: 2.5rem;
-  color: #fff;
+  color: var(--custom-white);
   transition: color 0.5s ease;
   animation: pulse 1.5s ease-in-out infinite;
+  text-decoration: none;
 }
 @keyframes pulse {
   0%,
@@ -133,7 +137,7 @@
 /* Lower section */
 .info-section {
   flex: 1.2;
-  background-color: #fff;
+  background: rgba(255, 255, 255, 0.8);
   color: var(--black-600);
   border-radius: 0 0 3rem 3rem;
   display: flex;
@@ -142,7 +146,7 @@
 }
 .info-wrapper {
   padding: 1rem;
-  height: 30rem;
+  height: 50vh;
   width: 94%;
   overflow-y: auto;
 }
@@ -158,6 +162,7 @@
 #story a {
   transition: color 0.4s ease;
   animation: pulse 1.5s ease-in-out infinite;
+  text-decoration: none;
 }
 
 /* Back side specific upper */
@@ -185,18 +190,11 @@
   .kanji {
     font-size: clamp(5rem, 4vh, 6rem);
   }
-  .kanji a {
-    color: rgba(255, 255, 255, 1);
-  }
-  #radical a, #radical div {
+  #radical a, #radical div, .meaning {
     font-size: clamp(1rem, 3.5vh, 2rem);
   }
 
   /* Lower section */
-  .info-section {
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(5px);
-  }
   .info {
     gap: 0.6rem;
     margin: 1rem;
