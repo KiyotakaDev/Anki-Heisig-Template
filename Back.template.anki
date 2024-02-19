@@ -5,9 +5,9 @@
     <!-- Upper section -->
     <div class="kanji-section">
       <span class="number">Strokes: {{Strokes}}</span>
+      <p class="meaning">{{Meaning}}</p>
       <div class="kanji-container">
-        <p class="meaning">{{Meaning}}</p>
-        <span>{{StrokeOrder}}</span>
+        <span id="stroke-order">{{StrokeOrder}}</span>
       </div>
     </div>
 
