@@ -184,12 +184,16 @@
   }
   .kanji {
     font-size: clamp(5rem, 4vh, 6rem);
+    color: white;
   }
   #radical a, #radical div {
     font-size: clamp(1rem, 3.5vh, 2rem);
   }
 
   /* Lower section */
+  .info-section {
+    background-color: white;
+  }
   .info {
     gap: 0.6rem;
     margin: 1rem;
