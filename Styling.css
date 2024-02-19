@@ -31,7 +31,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "UD Digi Kyokasho NK-B", "Consolas";
+  font-family: "UD Digi Kyokasho NK-B", "Verdana", "Consolas";
   scroll-behavior: smooth;
 }
 
@@ -167,4 +167,33 @@
   right: 0;
   margin: 2rem;
   font-size: 3rem;
+}
+
+/* Queries */
+@media (max-width: 780px) {
+  /* Upper section */
+  .wrapper {
+    margin: 1.5rem 0;
+    height: 86vh;
+    width: 92%;
+  }
+  .number {
+    margin: 1.5rem;
+    font-size: clamp(1.5rem, 4vh, 2rem);
+    font-weight: bold;
+  }
+  .kanji {
+    font-size: clamp(5rem, 4vh, 6rem);
+  }
+  #radical a, #radical div {
+    font-size: clamp(1rem, 3.5vh, 2rem);
+  }
+
+  /* Lower section */
+  .info {
+    gap: 0.6rem;
+    margin: 1rem;
+    font-size: clamp(1.6rem, 4vh, 1.8rem);
+    font-weight: bold;
+  }
 }
