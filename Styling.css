@@ -173,6 +173,14 @@
   margin: 2rem;
   font-size: 3rem;
 }
+#stroke-order {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  background-color: transparent;
+  height: 15vh;
+  width: 50%;
+}
 
 /* Queries */
 @media (max-width: 780px) {
@@ -200,5 +208,9 @@
     margin: 1rem;
     font-size: clamp(1.6rem, 4vh, 1.8rem);
     font-weight: bold;
+  }
+  #stroke-order {
+    height: 12vh;
+    width: 80%;
   }
 }
